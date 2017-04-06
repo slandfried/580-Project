@@ -1,0 +1,161 @@
+.navbar .navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+.navbar-left{
+	padding-left: 5px;
+}
+.navbar-toggle{
+	background-color: #2b2b2b !important;
+}
+.navbar-toggle span{
+	color: white !important;
+}
+.navbar-left{
+	width:300px;
+	padding-left: 70px;
+}
+.navbar-right{
+	padding-right: 70px;
+}
+.navbar-left>img{
+	height: 70px;
+	width:auto;
+	padding-top: 10px;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>a:active{
+    background-color: transparent !important;
+}
+.nav .dropdown-toggle{
+	background-color: transparent !important;
+}
+.navbar-nav > li > .dropdown-menu { 
+	background-color: rgba(66, 139, 202, 1);
+	margin-top: 10px;
+
+}
+.navbar-nav > li > .dropdown-menu a{
+	color: #fcfcfc;
+}
+.navbar-nav > li > .dropdown-menu a:hover{
+	color: #2b2b2b;
+}
+.nav .active{
+	background-color: rgba(66, 139, 202, 1);
+}
+.navbutton:focus{
+	outline:0;
+}
+.navbar{
+	min-height: 90px;
+	color: white;
+	font-size: 14px;
+    background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+    border-width: 0px;
+    border-radius: 0px;
+    
+}
+.navbar a{
+	color: #fcfcfc;
+}
+.navbar a:hover{
+	color: #2b2b2b;
+}
+#loggedincollapse, #navbarcollapse{
+	background-color: transparent !important;
+	border: 2px solid white;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+ul .dropdown-menu li a {
+  color: #a6a6a6;
+}
+ul .dropdown-menu li{
+	height: 35px;
+}
+
+#box, #cbox {
+	border: solid;
+	border-color: brown;
+	background-image: url(https://www.123freevectors.com/wp-content/uploads/new/123fv-images/1175-green-chalkboard-background.jpg);
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+
+}
+.shapesletters, .additionletters {
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px blue;
+}
+
+#wrapper {
+}
+
+#adcorrect, #adfalse {
+	display: none;
+}
+
+#correct { 
+	display: none;
+	color: green;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    border: solid;
+	border-color: green;
+	background-color: lightgreen;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+
+}
+#adc { 
+	color: green;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    border: solid;
+	border-color: green;
+	background-color: lightgreen;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+
+}
+#false {
+	display: none;
+	color: red;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    border: solid;
+	border-color: red;
+	background-color: #ffb3b3;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+#adf {
+	color: red;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    border: solid;
+	border-color: red;
+	background-color: #ffb3b3;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.introbody {
+	background-image: url(http://2.bp.blogspot.com/-7mfbs5byKWI/VYFqxnkzQEI/AAAAAAAAA4I/sw8opP_gx0A/s1600/bigstock-Old-School-Classroom-5235439.jpg);
+}
+
+#additionbody {
+	background-image: url(http://img.clipartall.com/free-classroom-clipart-clipart-classroom-6168_3937.png);
+	background-size: 90% 90%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+#cornersanswers, #additionanswers, #countanswers {
+	display: none;
+}
+
+#additionnumbers {
+	font-size: 200%;
+}
+
+#adcol8 {
+	border: solid;
+}
+
