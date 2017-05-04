@@ -13,7 +13,7 @@
           <div class="form-group">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
-             <input type="email" value="" class="form-control" id="inputEmail3" placeholder="Email" name = "username">
+             <input type="email" value="" class="form-control" id="inputEmail3" placeholder="Username" name = "username">
             </div>
             <div class="col-sm-1"></div>
           </div>
@@ -27,8 +27,9 @@
           <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
-                <center><button type="submit" id="loginsubmit" class="btn btn-md btn-primary btn-block">Login</button></center>
-                <a href="#registermodal"  id="registerlink" data-toggle="modal">Register</a>
+                <center><button type="submit" id="loginsubmit" class="btn btn-md btn-default btn-block">Login</button></center>
+                <br>
+                <a href="#registermodal"  id="registerlink" data-toggle="modal" data-dismiss="modal" class="btn btn-md btn-default btn-block">Register</a>
             </div>
             <div class="col-sm-1"></div>
           </div>
