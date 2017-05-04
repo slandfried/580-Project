@@ -19,6 +19,7 @@
     <link href="indexCSS.css" rel="stylesheet">
     <script src="core/jsfunctions/jquery-3.1.1.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

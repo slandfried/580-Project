@@ -1,5 +1,5 @@
 <header> 
-  <nav id="navbarloggedin" class="navbar navbar-fixed-top">
+  <nav id="teachernavbarloggedin" class="navbar navbar-fixed-top">
       <div class="container-fluid">
         <!-- <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" id="loggedincollapse">
@@ -7,12 +7,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span> 
         </button>
-        a class="navbar-left" href="index.php"><img class="img" alt="Project" style="margin-top: 3px;" src="http://images.clipartpanda.com/teacher-apple-clipart-red-apple-md.png"></a>
+        <a class="navbar-left" href="index.php"><img class="img" alt="Project" style="margin-top: 3px;" src="http://images.clipartpanda.com/teacher-apple-clipart-red-apple-md.png"></a>
         </div> -->
         <div id="myNavbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-            <li><a href="activities.php" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Activities</a></li>
+            <li><a href="#" class="navbutton" data-toggle="modal" data-target="#studentscoresmodal" id="studentscoresmodallink"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Class Progress</a></li>
             <li><a href="#" class="navbutton" data-toggle="modal" data-target="#aboutmodal" id="">About</a></li>
             <li><a href="#" class="navbutton" data-toggle="modal" data-target="#contactmodal" id="">Contact</a></li>
             <li class="dropdown">
