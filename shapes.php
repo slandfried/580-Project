@@ -38,9 +38,9 @@ include 'core/init.php';
     		<div class="container">
     			<div id="cornersreg">
     			<div class="row">
-    					<center><h1 class="shapesletters" id="sl1">How many corners (vertices) does this shape have?</h1>
-    						<h5>Press the SPACE bar to select the correct number.</h5>
-    						<h5>Press any other key to submit answer and advance to next shape.</h5></center>
+    					<center><h1 class="shapesletters" class="q">How many corners (vertices) does this shape have?</h1>
+    						<h5 class="inst">Press the SPACE bar or LEFT arrow to select the correct number.</h5>
+    						<h5 class="inst">Press the RIGHT arrow or ENTER to submit answer and advance to next problem.</h5></center>
     			</div>
     			<br>
     			<br>

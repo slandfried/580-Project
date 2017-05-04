@@ -6,21 +6,30 @@ include 'core/init.php';
 	<?php
 	include 'phpinclude/head.php';
 	?>
-	<title>Title Goes Here</title>
+	<title>Activities For All</title>
 	</head>
 
-	<body>
+	<body id="indexbody">
 		<?php
 		if(Users::isLoggedIn()){
-			include 'phpinclude/navbarloggedin.php';
+			if(Users::isTeacher()) {
+				include 'modalpages/studentscores.html';
+				include 'modalpages/studentcorrect.html';
+				include 'phpinclude/teachernavbarloggedin.php';
+			}
+			else {
+				include 'phpinclude/navbarloggedin.php';
+			}
 		}else{
 			include 'phpinclude/navbar.php';
+			include 'modalpages/signup.html';
 		}
 		include 'modalpages/login.php';
 		include 'modalpages/contact.html';
 		include 'modalpages/about.html';
 		if(Users::isLoggedIn()){
-			include 'phpinclude/contentloggedin.php';
+			if(Users::isTeacher()) {include 'phpinclude/teachercontentloggedin.php';}
+			else {include 'phpinclude/contentloggedin.php';}
 		}else{
 			include 'phpinclude/contentnotloggedin.php';
 		}

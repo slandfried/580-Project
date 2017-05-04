@@ -9,10 +9,10 @@ include 'core/init.php';
 	<link  href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css" >
 
     <link  href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css" >
-	<title>Title Goes Here</title>
+	<title>Counting</title>
 	</head>
 
-	<body>
+	<body id="countingshapesbody">
 		<?php
 		if(Users::isLoggedIn()){
 			include 'phpinclude/navbarloggedin.php';
@@ -28,9 +28,6 @@ include 'core/init.php';
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
 		<!--End br tags-->
 
 		<!-- Start Page Content -->
@@ -39,12 +36,24 @@ include 'core/init.php';
     			<div id="countreg">
     			<div class="row">
     					<center><h1 class="shapesletters">How many shapes do you count?</h1>
-    						<h5>Press the SPACE bar to select the correct number.</h5>
-    						<h5>Press any other key to submit answer and advance to next grouping.</h5></center>
+    						<h5>Press the SPACE bar or LEFT arrow to select the correct number.</h5>
+    						<h5>Press the RIGHT arrow or ENTER to submit answer and advance to the next grouping.</h5></center>
     			</div>
     			<br>
+                <div class="row shapecount">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div id = "wrapper"><center><h3 class="shapesletters">Count</h3></center><center>
+                            <div id="cbox"><br><div id="ccount">0</div><br></div>
+                            <div id = "correct"><h1>Correct!</h1></div>
+                            <div id = "false"><h3 id="fresponse"></h3></div>
+                        </center></div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
     			<br>
-                <div class="row">
+                <br>
+                <div class="row shapecount">
                     <div class="col-sm-1" id="count-shape1"></div>
                     <div class="col-sm-1" id="count-shape2"></div>
                     <div class="col-sm-1" id="count-shape3"></div>
@@ -58,7 +67,7 @@ include 'core/init.php';
                     <div class="col-sm-1" id="count-shape11"></div>
                     <div class="col-sm-1" id="count-shape12"></div>
                 </div>
-                <div class="row">
+                <div class="row shapecount">
                     <div class="col-sm-1" id="count-shape13"></div>
                     <div class="col-sm-1" id="count-shape14"></div>
                     <div class="col-sm-1" id="count-shape15"></div>
@@ -73,18 +82,7 @@ include 'core/init.php';
                     <div class="col-sm-1" id="count-shape24"></div>
                 </div>
                 <br>
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-6">
-                        <div id = "wrapper"><center><h3 class="shapesletters">Count</h3></center><center>
-                            <div id="cbox"><br><div id="ccount">0</div><br></div>
-                            <div id = "correct"><h1>Correct!</h1></div>
-                            <div id = "false"><h3 id="fresponse"></h3></div>
-                        </center></div>
-                    </div>
-                    <div class="col-sm-3"></div>
-                </div>
-    			
+    			</div>
     		<div id="countanswers">
     			<div class="row">
     				<center><h1 class="shapesletters">Here are your results!</h1></center>

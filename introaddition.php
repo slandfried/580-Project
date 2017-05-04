@@ -23,10 +23,6 @@ include 'core/init.php';
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<!--End br tags-->
 
 		<!-- Start Page Content -->
@@ -37,10 +33,8 @@ include 'core/init.php';
     					<center><h5 class="shapesletters">Below are some activies to test your understanding of addition.</h5></center>
     			</div>
     			<br>
-    			<br>
-    			<br>
     			<div class="row">
-    				<center><a href="addition.php" class="button"><span>Simple Addition</span></a></center>
+    				<center><a href="addition.php" class="btn btn-default"><span>Simple Addition</span></a></center>
     			</div>
     		</div>
     	</div>

@@ -29,16 +29,16 @@ include 'core/init.php';
 		<div id="shapeshomediv">
     		<div class="container">
     			<div class="row">
-    					<center><h1 class="shapesletters" id="sl1">Welcome to Shapes!</h1></center>
-    					<center><h5 class="shapesletters">Below are some activies to test your understanding of shapes.</h5></center>
+    					<center><h1 class="spellletters" id="sl1">Welcome to Words!</h1></center>
+    					<center><h5 class="spellletters">Below are some activies to test your understanding of word recognition and spelling.</h5></center>
     			</div>
     			<br>
     			<div class="row">
-    				<center><a href="cornershapes.php" class="btn btn-default"><span>Counting Vertices</span></a></center>
+    				<center><a href="spelling.php" class="btn btn-default"><span>Simple Spelling</span></a></center>
     			</div>
     			<br>
     			<div class="row">
-    				<center><a href="countingshapes.php" class="btn btn-default"><span>Counting Shapes</span></a></center>
+    				<center><a href="rhyming.php" class="btn btn-default"><span>Simple Rhyming</span></a></center>
     			</div>
     		</div>
     	</div>

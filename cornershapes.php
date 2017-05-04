@@ -9,10 +9,10 @@ include 'core/init.php';
 	<link  href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css" >
 
     <link  href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css" >
-	<title>Title Goes Here</title>
+	<title>Vertices</title>
 	</head>
 
-	<body>
+	<body id="cornershapesbody">
 		<?php
 		if(Users::isLoggedIn()){
 			include 'phpinclude/navbarloggedin.php';
@@ -38,23 +38,25 @@ include 'core/init.php';
     		<div class="container">
     			<div id="cornersreg">
     			<div class="row">
-    					<center><h1 class="shapesletters" id="sl1">How many corners (vertices) does this shape have?</h1>
-    						<h5>Press the SPACE bar to select the correct number.</h5>
-    						<h5>Press any other key to submit answer and advance to next shape.</h5></center>
+    					<center><h1 class="shapesletters" class="q">How many corners (vertices) does this shape have?</h1>
+    						<h5 class="inst">Press the SPACE bar or LEFT arrow to select the correct number.</h5>
+    						<h5 class="inst">Press the RIGHT arrow or ENTER to submit answer and advance to the next shape.</h5></center>
     			</div>
     			<br>
     			<br>
     			<br>
     			<div class="row">
+                <div id="shapeswrapper">
     				<div class="col-sm-6"><center><div id="shape"></div></center></div>
     				<div class="col-sm-6">
     					<div id = "wrapper"><center><h3 class="shapesletters" id="sl2">Number of Corners</h3></center><center>
     						<div id="box"><br><div id="count">0</div><br></div>
-    						<div id = "correct"><h1>Correct!</h1></div>
+    						<div id = "correct"><h2>Correct!</h2></div>
     						<div id = "false"><h3 id="fresponse"></h3></div>
     					</center></div>
-    			</div>
-    		</div>
+    			    </div>
+    		    </div>
+                </div>
     		</div>
     		<div id="cornersanswers">
     			<div class="row">

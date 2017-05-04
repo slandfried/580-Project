@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Julius+Sans+One');
+
 .navbar .navbar-toggle .icon-bar {
     background-color: white !important;
 }
@@ -15,7 +17,12 @@
 	padding-left: 70px;
 }
 .navbar-right{
-	padding-right: 70px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 15px;
+}
+.navbar-nav {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 15px;
 }
 .navbar-left>img{
 	height: 70px;
@@ -31,7 +38,6 @@
 .navbar-nav > li > .dropdown-menu { 
 	background-color: rgba(66, 139, 202, 1);
 	margin-top: 10px;
-
 }
 .navbar-nav > li > .dropdown-menu a{
 	color: #fcfcfc;
@@ -47,18 +53,29 @@
 }
 .navbar{
 	min-height: 90px;
-	color: white;
 	font-size: 14px;
-    background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+    /*background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);*/
     border-width: 0px;
     border-radius: 0px;
     
 }
 .navbar a{
-	color: #fcfcfc;
+	width: 200px
+	height: 25px;
+	color: #3C284C;
+	border-right: solid;
+	border-color: #3C284C;
+	border-width: 1px;
+	margin: 3px;
 }
 .navbar a:hover{
-	color: #2b2b2b;
+	width: 200px
+	height: 25px;
+	color: white;
+	background-color: #3C284C;
+	border: solid;
+	margin: 3px;
+	border-width: 1px;
 }
 #loggedincollapse, #navbarcollapse{
 	background-color: transparent !important;
@@ -73,6 +90,30 @@ ul .dropdown-menu li{
 	height: 35px;
 }
 
+#registernav, #logoutnav {
+	border: none;
+}
+
+#registernav:hover {
+	width: 200px
+	height: 25px;
+	color: white;
+	background-color: #3C284C;
+	border: solid;
+	margin: 3px;
+	border-width: 1px;
+}
+
+#logoutnav:hover {
+	width: 200px
+	height: 25px;
+	color: white;
+	background-color: #3C284C;
+	border: solid;
+	margin: 3px;
+	border-width: 1px;
+}
+
 #box, #cbox {
 	border: solid;
 	border-color: brown;
@@ -82,15 +123,12 @@ ul .dropdown-menu li{
     text-align: center;
 
 }
-.shapesletters, .additionletters {
+.shapesletters, .additionletters, .subtractionletters, .card-title, .spellletters, .activityletters, .rhymeletters, #rhyming, .progressletters, .modal-title{
 	color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px blue;
 }
 
-#wrapper {
-}
-
-#adcorrect, #adfalse {
+#adcorrect, #adfalse, #subcorrect, #subfalse {
 	display: none;
 }
 
@@ -105,7 +143,7 @@ ul .dropdown-menu li{
     padding: 50px 0px 50px 0px;
 
 }
-#adc { 
+#adc, #subc { 
 	color: green;
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
     border: solid;
@@ -125,7 +163,7 @@ ul .dropdown-menu li{
     text-align: center;
     padding: 50px 0px 50px 0px;
 }
-#adf {
+#adf, #subf {
 	color: red;
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
     border: solid;
@@ -137,25 +175,398 @@ ul .dropdown-menu li{
 
 
 .introbody {
-	background-image: url(http://2.bp.blogspot.com/-7mfbs5byKWI/VYFqxnkzQEI/AAAAAAAAA4I/sw8opP_gx0A/s1600/bigstock-Old-School-Classroom-5235439.jpg);
+	background-image: url(../images/classroom.jpg);
 }
 
-#additionbody {
-	background-image: url(http://img.clipartall.com/free-classroom-clipart-clipart-classroom-6168_3937.png);
+#additionbody, #subtractionbody {
+	background-image: url(../images/board.png);
 	background-size: 90% 90%;
 	background-position: bottom;
 	background-repeat: no-repeat;
 }
 
-#cornersanswers, #additionanswers, #countanswers {
+#cornersanswers, #additionanswers, #countanswers, #subtractionanswers, #spellanswers, #rhymeanswers {
 	display: none;
 }
 
-#additionnumbers {
+#additionnumbers, #subtractionnumbers {
 	font-size: 200%;
 }
 
-#adcol8 {
+#adcol8, #subcol8 {
 	border: solid;
 }
 
+#notlogstudent, #notlogteacher, #logactivity, #logprogress {
+	border: solid;
+	border-color: #3C284C;
+	border-radius: 36px;
+	padding: 10px;
+	box-shadow: 10px 10px 10px 5px #888888;
+}
+
+#notlogstudent, #logactivity {
+	/*background-image: url(http://blog.zealousgood.com/wp-content/uploads/2013/10/school-supplies.jpg);
+	background-position: center;*/
+	background: #FFFFFF;
+ 	background: linear-gradient(#FFFFFF, #513257);
+ 	border-radius: 24px;
+}
+
+#notlogteacher, #logprogress{
+	/*background-image: url(http://mediad.publicbroadcasting.net/p/kcbx/files/201502/teachers_desk_apple.png);
+	background-size: 100% 100%;*/
+	background: #FFFFFF;
+  	background: linear-gradient(#FFFFFF, #513257);
+  	border-radius: 24px;
+}
+
+.act_card {
+	border: solid;
+	border-color: #3C284C;
+	border-radius: 36px;
+	padding: 10px;
+	background: #FFFFFF;
+  	background: linear-gradient(#513257, #FFFFFF);
+}
+
+#addt, #subt, #shpt {
+	font-size: 50px;
+	font-family: 'Amatic SC', cursive;
+}
+
+.activityletters {
+	font-size: 100px;
+	font-family: 'Amatic SC', cursive;
+}
+
+.card-title {
+	font-size: 75px;
+	font-family: 'Amatic SC', cursive;
+}
+
+.modal-title {
+	font-size: 20px;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.card-img-top {
+	border-radius: 50%;
+	border: solid;
+	border-color: #3C284C;
+	width: 100%;
+	height: 20%;
+}
+
+.card-text {
+	display: none;
+}
+
+#indexbody, #activitybody, .progressbody {
+	background-image: url(../images/paper.jpg);
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #8127B9;
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+h1 {
+    color: #EEEEEE;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #D30ED6;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #FFFFFF;
+
+        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(0deg);  /* IE 9 */
+            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotate(360deg);  /* IE 9 */
+            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+        }
+    }
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #3C284C;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+}
+
+#navbarnotloggedin, #indexhomedivnotlog, #indexhomedivlog, #navbarloggedin, #activityhomediv, #progresshomediv {
+	display: none;
+}
+
+.q, .inst, #shapeswrapper, #additionnumbers, #subtractionnumbers, .shapecount, .addprob, .addsol, .subprob, .subsol, #spellwrapper, .spellheight, #spellcorrectwrapper, #spellfalsewrapper {
+	display: none;
+}
+
+.spellword, .cspellword, .fspellword {
+	font-size: 175%;
+	font-family: 'Julius Sans One', sans-serif;
+	font-style: bold;
+	border: solid;
+	margin: 1px;
+	height: 100px;
+	padding-top: 35px;
+}
+
+#spell_back1 {
+	background-color: purple;
+	border-color: black;
+	color: white;
+}
+
+#spell_back4, #spell_back5, #spell_back6 {
+	background-color: grey;
+	color: black;
+	border-color: black;
+
+}
+
+#c_back2, #c_back3, #c_back4, #c_back5, #c_back6, #f_back2, #f_back3, #f_back4, #f_back5, #f_back6 {
+	background-color: grey;
+	color: black;
+	border-color: black;
+
+}
+
+#c_back1 {
+	background-color: #57E465;
+	color: green;
+	border-color: green;
+}
+
+#f_back1 {
+	background-color: #EC8C8C;
+	color: red;
+	border-color: red;
+}
+
+#rhyming {
+	font-size: 150px;
+	font-family: 'Amatic SC', cursive;
+}
+
+.rhyme_c {
+	font-family: 'Amatic SC', cursive;
+}
+
+.rhyme_w {
+	border: solid;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 25px;
+	font-size: 45px;
+}
+
+#rhyme2, #rhyme3, #rhyme4 {
+	border-color: purple;
+	color: purple;
+}
+
+#rhyme1 {
+	color: white;
+	background-color: purple;
+}
+
+#rhymewrapper, #rhymewrapper2 {
+	display: none;
+}
+
+#rhymecorrect, #rhymefalse {
+	display: none;
+}
+
+#rhymec1 {
+	background-color: #57E465;
+	color: green;
+	border-color: green;
+}
+
+#rhymef1 {
+	background-color: #EC8C8C;
+	color: red;
+	border-color: red;
+}
+
+#rhymef2, #rhymef3, #rhymef4 {
+	border-color: purple;
+	color: purple;
+}
+
+.btn {
+	background: white;
+    color: #3C284C;
+    border-color: #3C284C;
+    border-radius: 24px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.btn:focus {
+	outline: none;
+	background: white;
+}
+
+.btn:hover {
+	background: #3C284C;
+    color: white;
+    border-color: #3C284C;
+    border-radius: 24px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.progressrow {
+	padding: 5px;
+	border: solid;
+	border-color: #3C284C;
+	font-family: 'Julius Sans One', sans-serif;
+	letter-spacing: -1px;
+	background-color: white;
+}
+
+.progressact, .progressq, .progressmis {
+	border-style: outset;
+	color: #3C284C;
+	background: white;
+	padding: 5px;
+}
+
+.progressletters {
+	font-family: 'Amatic SC', cursive;
+	font-size: 125px;
+}
+
+#pro1 {
+	font-size: 75px;
+}
+
+#pro2 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 20px;
+	color: #3C284C;
+	font-weight: 700;
+}
+
+.progresssep {
+	border-bottom: solid;
+	border-color: #3C284C;
+	padding: 5px;
+}
+
+.progressnum {
+	font-size: 30px;
+	color: #3C284C;;
+	padding: 10px;
+}
